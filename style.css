@@ -1,0 +1,790 @@
+/* * {
+  box-sizing: border-box;
+} */
+body {
+  overflow-x: hidden;
+  background-color: black;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  background-color: rgb(22 4 75);
+  /* border: 0.2rem solid gray; */
+  justify-content: space-between;
+  height: 5rem;
+  opacity: 90%;
+}
+
+.containerLogo {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 3rem;
+  /* background-color: red; */
+  border-radius: 50%;
+  margin-left: 1rem;
+  text-align: center;
+  margin: 1rem;
+}
+.register {
+  /* width: 100%; */
+  /* padding: 3rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
+  font-family: "Press Start 2P", cursive;
+}
+/* .txt-email {
+  display: flex;
+  flex-direction: row;
+}
+.txt-pass {
+  display: flex;
+  flex-direction: row;
+} */
+
+.email1 {
+  display: flex;
+  justify-content: left;
+}
+.pass1 {
+  display: flex;
+  justify-content: left;
+}
+.email2 {
+  display: flex;
+  justify-content: left;
+}
+.pass2 {
+  display: flex;
+  justify-content: left;
+}
+.name1 {
+  display: flex;
+  justify-content: left;
+}
+.username1 {
+  display: flex;
+  justify-content: left;
+}
+.enter-email {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.btn-remember-me {
+  padding: 2rem;
+}
+.enter-singup {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+}
+.textEmail {
+  display: flex;
+
+  height: 5rem;
+}
+.textPass {
+  display: flex;
+
+  align-items: center;
+  height: 5rem;
+}
+.sign-up {
+  display: flex;
+  justify-content: center;
+}
+#close {
+  display: flex;
+  justify-content: left;
+  border: none;
+  color: #000000;
+  /* float: right; */
+  font-size: 28px;
+  font-weight: bold;
+  background-color: rgb(121, 216, 25);
+}
+
+#closee {
+  display: flex;
+  justify-content: left;
+  border: none;
+  color: #000000;
+  /* float: right; */
+  font-size: 28px;
+  font-weight: bold;
+  background-color: rgb(121, 216, 25);
+}
+.sign-up {
+  color: white;
+  margin-left: 10px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 8em;
+  height: 2rem;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.btn-sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5rem; */
+}
+.all-log {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+}
+.sign-up:hover {
+  opacity: 1;
+}
+.logging {
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  width: 7rem;
+  height: 2rem;
+  margin-right: 30px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.logging:hover {
+  opacity: 1;
+}
+.lwd {
+  color: white;
+  font-family: "Press Start 2P", cursive;
+}
+
+.fa-road {
+  color: white;
+}
+.log-in {
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  /* text-align: center; */
+  width: 7rem;
+  height: 2rem;
+  margin-right: 30px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+.log-in:hover {
+  opacity: 1;
+}
+.LIM {
+  background-color: rgb(0, 0, 0);
+  opacity: 0%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border: 3rem;
+  transition: opacity 0.3 ease-in;
+}
+.modal {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  align-self: center;
+  background-color: rgb(121, 216, 25);
+  width: 50%;
+  height: 50%;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 1%;
+}
+.modal h1 p {
+  display: flex;
+  justify-content: center;
+}
+.meme {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-2 {
+  display: flex;
+  justify-content: right;
+  align-self: center;
+  background-color: rgb(121, 216, 25);
+  width: 50%;
+  height: 50%;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 1%;
+}
+.LIM.show {
+  pointer-events: auto;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+.KIM {
+  background-color: rgb(0, 0, 0);
+  opacity: 0%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border: 3rem;
+  transition: opacity 0.3 ease-in;
+}
+.KIM.show {
+  pointer-events: auto;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+.random-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "Press Start 2P", cursive;
+  background-color: #000125;
+  opacity: 80%;
+  /* position: fixed; */
+  width: 100%;
+}
+/* .img {
+  height: 35rem;
+  width: 100%;
+} */
+
+.center-image {
+  background-image: url("https://zdblogs.zohocorp.com/creator/decode/sites/creator/decode/files/2020-12/VPL-04%20%281%29.jpg");
+  background-size: 100% 100%;
+  /* width: 100%; */
+  height: 59rem;
+}
+
+.random-text2 {
+  color: white;
+  width: 100%;
+  height: 10rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* .sb-center {
+  height: 100%;
+  width: 100%;
+} */
+
+.shadow-box2 {
+  padding-top: 50px;
+  padding-left: 1rem;
+}
+.shadow-box2-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: -5rem; */
+  /* padding-top: 5rem; */
+  padding-top: 20px;
+  border-radius: 4rem;
+  width: 43%;
+  height: 250px;
+  background-color: #179dc8;
+  /* opacity: 70%; */
+  padding-left: 3rem;
+  padding-right: 3rem;
+  line-height: 150%;
+  box-shadow: 5px 5px white;
+}
+.shadow-box3 {
+  padding-left: 65rem;
+}
+.shadow-box3-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: -5rem; */
+  /* padding-top: 5rem; */
+  padding-top: 20px;
+  border-radius: 4rem;
+  width: 43%;
+  height: 250px;
+  background-color: #be2fb7;
+  /* opacity: 70%; */
+  padding-left: 3rem;
+  padding-right: 3rem;
+  line-height: 150%;
+  box-shadow: 5px 5px white;
+}
+
+.shadow-box4 {
+  padding-left: 5rem;
+}
+
+.shadow-box4-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: -5rem; */
+  /* padding-top: 5rem; */
+  padding-top: 20px;
+  border-radius: 4rem;
+  width: 43%;
+  height: 250px;
+  background-color: #fec799;
+  /* opacity: 70%; */
+  padding-left: 3rem;
+  padding-right: 3rem;
+  line-height: 150%;
+  box-shadow: 5px 5px white;
+}
+
+.shadow-box1 {
+  background-color: rgb(89 34 177);
+  width: 30%;
+  height: 60%;
+  border-radius: 3rem;
+  /* opacity: 10%; */
+  margin-left: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+.select-course {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+}
+
+.course-one {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://content.techgig.com/thumb/msid-75430401,width-860,resizemode-4/5-tips-for-students-to-improve-coding-skills-during-college.jpg?58220");
+  background-size: cover;
+}
+
+/**************************************************************************** this makes the dotted circle line */
+/* .course-one {
+  position: relative;
+  margin: 20px;
+  height: 225px;
+  width: 225px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.course-one:before {
+  position: absolute;
+  content: "";
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  border: 8px dashed #a184b4;
+  top: -13px;
+  left: -13px;
+  border-radius: inherit;
+  animation: spin 18s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+} */
+
+/* .p1 {
+  font-size: 4rem;
+} */
+.p1 {
+  /* background-image: linear-gradient(315deg, #533c79 0%, #6e45e1 74%); */
+  /* border: none; */
+  color: white;
+  /* padding: 16px 32px; */
+  text-align: center;
+  font-size: 4rem;
+  /* margin: 4px 2px; */
+  transition: 0.3s;
+  border-radius: 10%;
+}
+
+.p1:hover {
+  /* background-color: #154417; */
+  color: rgb(16, 16, 82);
+}
+
+.course-two {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsrQE4gUblyyO8mhXU39Dz9231Vx8Ws4YO9lZQLc-L6QyiH2xOFkHczrH0raoed3mLpkI&usqp=CAU");
+  background-size: cover;
+  /* font-family: "Press Start 2P", cursive; */
+}
+/* .course-two {
+  position: relative;
+  margin: 20px;
+  height: 225px;
+  width: 225px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.course-two:before {
+  position: absolute;
+  content: "";
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  border: 8px dashed #a184b4;
+  top: -13px;
+  left: -13px;
+  border-radius: inherit;
+  animation: spin 18s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+} */
+.p2 {
+  font-size: 3rem;
+}
+.p2 {
+  /* background-image: linear-gradient(315deg, #533c79 0%, #6e45e1 74%); */
+  /* border: none; */
+  color: white;
+  /* padding: 16px 32px; */
+  text-align: center;
+  font-size: 4rem;
+  /* margin: 4px 2px; */
+  transition: 0.3s;
+  border-radius: 10%;
+}
+
+.p2:hover {
+  /* background-color: #154417; */
+  color: rgb(16, 16, 82);
+}
+/* .course-three {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(315deg, #533c79 0%, #6e45e1 74%);
+} */
+/* .course-three {
+  position: relative;
+  margin: 20px;
+  height: 225px;
+  width: 225px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.course-three:before {
+  position: absolute;
+  content: "";
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  border: 8px dashed #a184b4;
+  top: -13px;
+  left: -13px;
+  border-radius: inherit;
+  animation: spin 18s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+} */
+.p3 {
+  font-size: 4em;
+}
+.p3 {
+  /* background-image: linear-gradient(315deg, #533c79 0%, #6e45e1 74%); */
+  /* border: none; */
+  color: white;
+  /* padding: 16px 32px; */
+  text-align: center;
+  font-size: 4rem;
+  /* margin: 4px 2px; */
+  transition: 0.3s;
+  border-radius: 10%;
+}
+.p3:hover {
+  /* background-color: #154417; */
+  color: rgb(16, 16, 82);
+}
+.course-three {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://miro.medium.com/max/3840/1*hRRrzQMf6owlPK1D53sVBA.png");
+  background-size: cover;
+  /* font-family: "Press Start 2P", cursive; */
+}
+.footer {
+  display: flex;
+  width: 100%;
+  height: 3.5rem;
+  /* background-color: white; */
+  opacity: 90%;
+}
+
+/* @keyframes insta-icon {
+} */
+.media {
+  color: #9782ab;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.made-by {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 2rem;
+  width: 70%;
+  color: red;
+  opacity: 70%;
+}
+.insta-icon {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.insta {
+  margin: 1rem;
+  position: relative;
+  display: inline-block;
+  visibility: visible;
+}
+.insta:hover .insta-text {
+  visibility: visible;
+}
+.insta .insta-text {
+  visibility: hidden;
+  width: 120px;
+  /* background-color: black; */
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+
+.yt {
+  margin: 1rem;
+  position: relative;
+  display: inline-block;
+  visibility: visible;
+}
+.yt-icon {
+  background-color: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.yt:hover .yt-text {
+  visibility: visible;
+  transition-duration: 10s;
+}
+
+.yt .yt-text {
+  visibility: hidden;
+  width: 120px;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+
+.git {
+  margin: 1rem;
+  position: relative;
+  display: inline-block;
+  visibility: visible;
+}
+
+.git:hover .git-text {
+  visibility: visible;
+}
+
+.git .git-text {
+  visibility: hidden;
+  width: 120px;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+
+/* <!----- okdkv -----> */
+/* body {
+  font-family: "Press Start 2P", cursive;
+}*/
+/* ---------------------------------------------------------------------------------aici incepe animatia ... */
+@keyframes blink {
+  /**
+   * At the start of the animation the dot
+   * has an opacity of .2
+   */
+  0% {
+    opacity: 0.2;
+  }
+  /**
+   * At 20% the dot is fully visible and
+   * then fades out slowly
+   */
+  20% {
+    opacity: 1;
+  }
+  /**
+   * Until it reaches an opacity of .2 and
+   * the animation can start again
+   */
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.saving span {
+  /**
+   * Use the blink animation, which is defined above
+   */
+  animation-name: blink;
+  /**
+   * The animation should take 1.4 seconds
+   */
+  animation-duration: 1.4s;
+  /**
+   * It will repeat itself forever
+   */
+  animation-iteration-count: infinite;
+  /**
+   * This makes sure that the starting style (opacity: .2)
+   * of the animation is applied before the animation starts.
+   * Otherwise we would see a short flash or would have
+   * to set the default styling of the dots to the same
+   * as the animation. Same applies for the ending styles.
+   */
+  animation-fill-mode: both;
+}
+
+.saving span:nth-child(2) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .2s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: 0.2s;
+}
+
+.saving span:nth-child(3) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: 0.4s;
+}
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type="name"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="username"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
